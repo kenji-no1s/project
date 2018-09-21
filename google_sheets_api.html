@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <script>
+        console.log('https://script.google.com/macros/s/AKfycbyXuN9J5PgSvY1LtPS7NwXLxW1UBf8Alkl48gkL1_TCBW2Vh7Q/exec');
+        console.log('こんにちは');
+        </script>
+        <script src="https://unpkg.com/vue"></script>
+
+        <div id="app">
+          <h1>{{ message }}</h1>
+          <div class="books">
+
+            <div class="book" v-for="book in books">
+              <div class="info">
+                <div class="title"><i class="book icon"></i> {{book.title}}</div>
+                <div class="review">{{book.review}}</div>
+              </div>
+              <div class="rate">
+                <div class="ui statistics">
+                  <div class="statistic">
+                    <div class="value"><i class="star icon"></i> {{book.rate}} </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </body>
+</html>
